@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    background-color: #5685ef;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    color: #5685ef;
+    z-index: 12;
+}
+.header .search-box input{
+    outline: none;
+    border: none;
+    width: 350px;
+    height: 30px;
+    font-size: 14px;
+    padding: 0 1rem;
+    border: 1px solid #5685ef;
+    color: #41403d;
+    
+}
+.container{
+    width: 100%;
+    position:absolute;
+    top: 70px;
+    display: flex;
+}
+.animeInfo{
+    width: 320px;
+    height: 100%;
+    background-color: #5685ef;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 11;
+}
+.anime-row{
+    display: flex;
+    flex-direction: column;
+}
+.anime-row .row{
+    display: inline-flex;
+    gap:20px;
+    margin-left: 20rem;
+    flex-wrap:wrap;
+    padding-bottom: 50px;
+}
+.anime-row .text-heading{
+    margin-left: 20rem;
+    margin-top: 1rem;
+    color: white;
+}
+.card{
+    width: 230px;
+    height: 300px;
+    padding: 0 0 1rem 0;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+}
+.card img{
+    width: 100%;
+    height: 90%;
+}
+.anime-content{
+    padding: 40px;
+    margin: 80px 0;
+}
+.anime-content img{
+    width: 150px;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10rem 3rem 0 0 ;
+    text-align: justify;
+    opacity: 0;
+    transition: 0.5s;
+}
+.anime-info{
+    color: #41403d;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.anime-info:hover .overlay{
+    opacity: 1;
+    height: 90%;
+}
+.overlay .synopsis{
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    overflow: auto;
+}
+.mylist{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    padding: 0.5rem;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #5685ef;
+}
+.mylist:hover{
+    background-color: #5685ef;
+    cursor: pointer;
+    color: white;
+}
